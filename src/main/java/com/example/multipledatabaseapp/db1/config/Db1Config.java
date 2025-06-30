@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
@@ -40,6 +41,7 @@ public class Db1Config {
         dataSource.setUsername(db1Properties.getUsername());
         dataSource.setPassword(db1Properties.getPassword());
         dataSource.setDriverClassName(db1Properties.getDriverClassName());
+        dataSource.setDataSourceProperties(new Properties());
         return dataSource;
     }
 

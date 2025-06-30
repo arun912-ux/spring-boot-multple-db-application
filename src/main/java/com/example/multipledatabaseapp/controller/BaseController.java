@@ -17,5 +17,13 @@ public class BaseController {
 //    public String index2() {
 //        return "index2 '/'";
 //    }
+//
+    @GetMapping("/")
+    public String index2() {
+        throw new ClassCastException("");
+//        return "index2 '/'";
+    }
+
+
 
 }

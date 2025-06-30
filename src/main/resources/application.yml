@@ -7,11 +7,6 @@ spring:
     url: jdbc:mariadb://localhost:3306/multiple-database-app
     username: root
     password: root123
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
-      format-sql: true
 
   db2:
     driver-class-name: org.postgresql.Driver
